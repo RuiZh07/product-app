@@ -13,7 +13,7 @@ export class ProductCardComponent {
   @Input() product!: Product;
   @Output() viewDetails = new EventEmitter<number>();
 
-  onViewDetails() {
+  onViewDetails(): void {
     this.viewDetails.emit(this.product.id);
   }
 }
