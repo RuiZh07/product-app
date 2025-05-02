@@ -24,8 +24,13 @@ export class ProductDetailComponent implements OnInit{
     this.productId = Number(this.route.snapshot.paramMap.get('id'));
 
     // Fetch corresponding product details
-    this.productService.getProductById(this.productId).subscribe((product) => {
-      this.product = product;
-    })
+    this.productService.getProductById(this.productId).subscribe({
+      next: (product) => {
+        this.product = product;
+      },
+      error: (error) => {
+        console.error('Error fetching product details: ', error);
+      }
+    });
   }
 }
