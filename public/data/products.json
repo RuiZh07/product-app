@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Smartphone",
+        "description": "High-end device with a great camera and 5G support.",
+        "price": 999
+    },
+    {
+        "id": 2,
+        "name": "Laptop",
+        "description": "High-perfome laptop with fast CPU, large RAM.",
+        "price": 2199
+    },
+    {
+        "id": 3,
+        "name": "Monitor",
+        "description": "27-inch high-resolution monitor for gaming or work.",
+        "price": 599
+    },
+    {
+        "id": 4,
+        "name": "Headphones",
+        "description": "Wirless headphones with noise cancellation and long battery life.",
+        "price": 349
+    },
+    {
+        "id": 5,
+        "name": "Gaming Console",
+        "description": "Next-gen console supporting 4K gaming",
+        "price": 679
+    }
+]
