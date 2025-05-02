@@ -11,11 +11,12 @@ export class ProductService {
 
   constructor(private http: HttpClient) { }
 
-  // Simulate async data fetching from a server
+  // Fetch product data from the server
   getProducts(): Observable<Product []> {
     return this.http.get<Product[]>(this.productsUrl);
   }
 
+  // Fetch a specific product by its ID from the list of products
   getProductById(id: number): Observable<Product | undefined> {
     return new Observable((observer) => {
       this.getProducts().subscribe((products) => {
