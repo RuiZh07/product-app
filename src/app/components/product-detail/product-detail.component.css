@@ -1,0 +1,20 @@
+.product-detail {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+}
+
+.product-detail h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.product-detail p {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 0.5rem 0;
+}

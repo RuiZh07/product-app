@@ -1,0 +1,9 @@
+<div *ngIf="product; else loading" class="product-detail">
+    <h2>{{ product.name }}</h2>
+    <p>{{ product.description }}</p>
+    <p><strong>Price: $</strong>{{ product.price }}</p>
+</div>
+
+<ng-template #loading>
+    <p>Loading...</p>
+</ng-template>
